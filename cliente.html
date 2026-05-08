@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SambaCars - Clientes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="container-fluid py-3 header-custom">
+    <span id="userName" class="text-white fw-bold"></span>
+
+    <div class="d-flex justify-content-between align-items-center pt-3">
+
+        <!-- MENU -->
+        <nav class="d-flex gap-4">
+            <a href="carros.html" class="nav-link-custom">Carros</a>
+            <a href="#contacto" class="nav-link-custom">Contacto</a>
+        </nav>
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo-center">
+            <img src="fotos/logo.png" class="logo-img" alt="Logo">
+        </a>
+
+        <!-- CARRINHO -->
+        <div class="d-flex align-items-center gap-3">
+
+            <div style="position:relative;">
+    <i class="bi bi-cart3 fs-3 text-white"></i>
+    <span id="cartCount"
+          style="position:absolute;
+                 top:-8px;
+                 right:-10px;
+                 background:red;
+                 color:white;
+                 font-size:12px;
+                 border-radius:50%;
+                 padding:2px 6px;
+                 display:none;">
+    </span>
+            </div>
+            <button onclick="logout()" class="btn btn-danger btn-sm ms-2">
+                Sair
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+<!-- TÍTULO -->
+<section class="container my-5">
+<h1 class="text-center fw-bold" id="tituloCliente">Área do Cliente</h1>
+    <p class="text-center text-muted">Escolhe e compra o teu carro</p>
+</section>
+
+<!-- CARROS -->
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <!-- EXEMPLO DE CARRO -->
+        
+<!-- CARRO 1 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/TRANSPARENT_cc_2024BMS220013_01_1280_475-1-1024x768.png" class="card-img-top" alt="BMW X5">
+        <div class="card-body text-center">
+            <h5>BMW X5</h5>
+            <p class="text-muted">50.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(1, 50000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 2 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/2021-Mercedes-Benz-C-Class-Sedan-hero.png" class="card-img-top" alt="Mercedes C-Class">
+        <div class="card-body text-center">
+            <h5>Mercedes C-Class</h5>
+            <p class="text-muted">45.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(2, 45000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 3 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/2025-audi-a6-performance-4-0-tfsi-quattro-angular-front-exterior-view_100965885_l.png" class="card-img-top" alt="Audi A6">
+        <div class="card-body text-center">
+            <h5>Audi A6</h5>
+            <p class="text-muted">48.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(3, 48000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 4 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/Tesla-Model-S-2023-2133x1200-cropped.jpg" class="card-img-top" alt="Tesla Model S">
+        <div class="card-body text-center">
+            <h5>Tesla Model S</h5>
+            <p class="text-muted">70.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(4, 70000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 5 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/9qtn6sa_1475635.png" class="card-img-top" alt="Lamborghini Huracan">
+        <div class="card-body text-center">
+            <h5>Lamborghini Huracan</h5>
+            <p class="text-muted">200.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(5, 200000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 6 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/bmwnovo.jpg" class="card-img-top" alt="BMW Série 3">
+        <div class="card-body text-center">
+            <h5>BMW Série 3</h5>
+            <p class="text-muted">48.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(6, 48000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 7 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/jetourT2.jpg" class="card-img-top" alt="Jetour T2">
+        <div class="card-body text-center">
+            <h5>Jetour T2</h5>
+            <p class="text-muted">45.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(7, 45000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 8 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/audi a4.jpg" class="card-img-top" alt="Audi A4">
+        <div class="card-body text-center">
+            <h5>Audi A4</h5>
+            <p class="text-muted">50.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(8, 50000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 9 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/2022_lexus_is-300_sedan_base_fq_oem_1_1600.png" class="card-img-top" alt="Lexus IS 300">
+        <div class="card-body text-center">
+            <h5>Lexus IS 300</h5>
+            <p class="text-muted">55.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(9, 55000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 10 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/BMW X3.jpg" class="card-img-top" alt="BMW X3">
+        <div class="card-body text-center">
+            <h5>BMW X3</h5>
+            <p class="text-muted">65.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(10, 65000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 11 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/front-left-side-47.png" class="card-img-top" alt="Mercedes GLC">
+        <div class="card-body text-center">
+            <h5>Mercedes-Benz GLC</h5>
+            <p class="text-muted">68.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(11, 68000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- CARRO 12 -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <img src="fotos/Toyota.jpg" class="card-img-top" alt="Toyota Land Cruiser Prado">
+        <div class="card-body text-center">
+            <h5>Toyota Land Cruiser Prado</h5>
+            <p class="text-muted">85.000.000 kzs</p>
+            <button class="btn btn-success w-100" onclick="comprarCarro(12, 85000000)">
+                <i class="bi bi-cart-plus"></i> Comprar
+            </button>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+
+            <div class="card shadow-sm h-100">
+
+                <img src="fotos/Lamborghini-Huracan-Sterrato.jpg" class="card-img-top">
+
+                <div class="card-body text-center">
+
+                    <h5>Lamborghini Huracan</h5>
+                    <p class="text-muted">200.000.000 kzs</p>
+
+                    <button class="btn btn-success w-100">
+                        <i class="bi bi-cart-plus"></i> Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    let user = JSON.parse(localStorage.getItem("user"));
+
+    let titulo = document.getElementById("tituloCliente");
+
+    if (user && user.nome) {
+        titulo.innerText = `Bem-vindo, ${user.nome}`;
+    } else {
+        titulo.innerText = "Área do Cliente";
+    }
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+body{
+    background:
+    linear-gradient(rgba(240,240,240,0.93),
+    rgba(220,220,220,0.93)),
+    url('img3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 90px;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-custom{
+    background: rgba(30,40,60,0.92);
+    backdrop-filter: blur(10px);
+    padding-inline: 50px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-img{
+    height: 90px;
+    margin-bottom: 5%;
+}
+
+.nav-link-custom{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 1.3rem;
+}
+
+.nav-link-custom:hover{
+    color: #4da3ff;
+}
+
+.icon-conta{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    scale: 1.2;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero-section{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content{
+    position: absolute;
+    bottom: 80px;
+    left: 70px;
+    color: white;
+    z-index: 2;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-content h1{
+    color: rgba(238, 241, 248, 0.942);
+    font-size: 4.5rem;
+    text-shadow: #0000008e 1px 1px 2px;
+    margin-bottom: 20%;
+}
+
+.hero-content p{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.92);
+    position: relative;
+    top: 50px;
+    
+
+}
+
+/* SOBRE */
+
+.sobre-section{
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-box{
+    max-width: 900px;
+    background: white;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.sobre-box h2{
+    color: #000000;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.5rem;
+}
+
+.sobre-box p{
+    text-align: justify;
+    line-height: 2;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+
+.carro-card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.img-carro-ajustada{
+    object-position: center;
+    object-fit:cover;
+}
+
+.texto-carro{
+    text-align: justify;
+    line-height: 2;
+    color: #000000;
+}
+
+/* CONTACTO */
+
+.contacto-box{
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contacto-box h3{
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.foto-dono{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-left: 70%;
+}
+
+/* BOTÕES */
+
+.btn-primary{
+    background: rgba(30,40,60,0.95);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.btn-primary:hover{
+    background: #24344f;
+}
+
+.btn-success{
+    border-radius: 10px;
+}
+
+/* MODAL */
+
+.modal-content{
+    border-radius: 20px;
+    border: none;
+}
+
+/* FOOTER */
+
+footer{
+    background: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}

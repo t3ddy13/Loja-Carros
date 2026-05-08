@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SambaCars - Venda de Automóveis</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="icone.ico">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="container-fluid py-3 header-custom">
+    
+    <div class="d-flex justify-content-between align-items-center position-relative pt-3">
+
+        <!-- MENU -->
+        <nav class="d-flex gap-4">
+            <a href="#sobre" class="nav-link-custom">Sobre</a>
+            <a href="#carros" class="nav-link-custom">Carros</a>
+            <a href="#contacto" class="nav-link-custom">Contacto</a>
+        </nav>
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo-center">
+            <img src="fotos/logo.png" class="logo-img" alt="Logo">
+        </a>
+
+        <!-- CONTA -->
+        <span class="nav-link-custom"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal">
+
+            <img src="fotos/account-icon-flat-art-black-white-isolated_1223784-16477.png"
+                 alt="Conta"
+                 class="icon-conta">
+        </span>
+
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero-section">
+
+    <img src="fotos/imagem coiso.jpg"
+         class="hero-bg"
+         alt="Carros">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1 class="fw-bold display-4">
+            Encontra o carro ideal ao melhor preço
+        </h1>
+        <p>
+            Compre carros de alta qualidade com segurança, rapidez e confiança.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre-section">
+
+    <div class="sobre-box">
+
+        <h2>Sobre Nós</h2>
+
+        <p>
+            A Sambacars nasceu com um propósito simples: ir além da venda de carros de alta gama.
+            Desde o início, a empresa foi criada para oferecer uma experiência completa,
+            onde cada cliente se sente valorizado e bem acompanhado em todas as etapas do processo.
+            Aqui, não se trata apenas de adquirir um veículo, mas de viver um momento marcante com confiança e tranquilidade.
+        </p>
+
+        <p>
+            Trabalhamos com uma seleção criteriosa de veículos, garantindo qualidade, procedência e alto desempenho.
+            Cada carro disponível na Sambacars é escolhido com atenção aos detalhes, pensando nas expectativas de quem procura excelência.
+            A nossa equipa está preparada para orientar, esclarecer dúvidas e ajudar na escolha certa, sempre com transparência e profissionalismo.
+        </p>
+
+        <p>
+            Mais do que vender, a Sambacars preocupa-se em construir relações duradouras com os seus clientes.
+            Acreditamos que um bom atendimento faz toda a diferença, por isso investimos num serviço personalizado, desde o primeiro contacto até ao pós-venda.
+            O nosso compromisso é claro: oferecer não só carros de alta gama, mas também uma experiência que realmente faça a diferença.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CARROS -->
+<section id="carros" class="container my-5">
+
+    <h1 class="text-center fw-bold mb-5">
+        Carro em Destaque
+    </h1>
+
+    <div class="row align-items-center g-5">
+
+        <!-- CARD -->
+        <div class="col-md-6">
+
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden carro-card">
+
+                <img src="fotos/Lamborghini-Huracan-Sterrato.jpg"
+                     class="card-img-top img-carro-ajustada"
+                     alt="Lamborghini Huracan">
+
+                <div class="card-body text-center">
+
+                    <h3 class="fw-bold mb-3">
+                       <em>Lamborghini Huracan</em> 
+                    </h3>
+
+                    <a href="carros.html" class="text-decoration-none">
+
+                        <button class="btn btn-dark px-5 rounded-pill">
+                            Ver mais
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TEXTO -->
+        <div class="col-md-6">
+
+            <p class="texto-carro">
+                O Lamborghini Huracan é um supercarro que combina
+                elegância, desempenho e tecnologia avançada.
+                Com um design sofisticado e um interior luxuoso,
+                oferece uma experiência de condução confortável
+                e emocionante.
+
+                Equipado com motores potentes e eficientes,
+                proporciona aceleração impressionante e excelente estabilidade.
+                Além disso, conta com tecnologias modernas de segurança
+                e assistência ao condutor, garantindo viagens mais seguras.
+
+                Se procura um carro que une luxo, velocidade e conforto,
+                o Lamborghini Huracan é a escolha perfeita.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="container my-5 contacto-box">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+
+            <h3>Contacto</h3>
+
+            <p>
+                <i class="bi bi-envelope-fill me-2"></i>
+                sambacars@gmail.com
+            </p>
+
+            <p>
+                <i class="bi bi-telephone-fill me-2"></i>
+                +244 910 123 987
+            </p>
+
+        </div>
+
+        <div class="col-md-6 text-center">
+
+            <img src="fotos/WhatsApp Image 2026-05-06 at 11.01.53.jpeg"
+                 class="foto-dono">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MODAL -->
+<div class="modal fade" id="loginModal">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5>Conta</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <ul class="nav nav-tabs mb-3">
+
+                    <li class="nav-item">
+                        <button class="nav-link active"
+                                data-bs-toggle="tab"
+                                data-bs-target="#login"
+                                type="button">
+                            Entrar
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link"
+                                data-bs-toggle="tab"
+                                data-bs-target="#reg"
+                                type="button">
+                            Registar
+                        </button>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content">
+
+                    <!-- LOGIN -->
+                    <div class="tab-pane fade show active" id="login">
+
+                        <input class="form-control mb-2" placeholder="Email">
+
+                        <input class="form-control mb-2"
+                               placeholder="Senha"
+                               type="password">
+
+                        <button type="button" class="btn btn-primary w-100" onclick="login()">
+                            Entrar
+                        </button>
+
+                    </div>
+
+                    <!-- REGISTO -->
+                    <div class="tab-pane fade" id="reg">
+
+                        <input class="form-control mb-2" placeholder="Nome">
+
+                        <input class="form-control mb-2" placeholder="Email">
+
+                        <input class="form-control mb-2" placeholder="Telefone">
+
+                        <input class="form-control mb-2" placeholder="Endereço">
+
+                        <input class="form-control mb-2"
+                               placeholder="Senha"
+                               type="password">
+
+                        <button type="button" class="btn btn-success w-100" onclick="registar()">
+                            Criar Conta
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 SambaCars - Desenvolvido por Samba Nanga
+</footer>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
